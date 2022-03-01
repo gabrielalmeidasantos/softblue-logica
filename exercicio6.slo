@@ -1,0 +1,25 @@
+início {
+    caractere: cadastro;
+    caractere: nomeCliente;
+    real: valorCompras;
+    real: porcentagemCompras;
+    
+    leia("Deseja iniciar o cadastro?", cadastro);
+    
+    enquanto(cadastro == "sim"){
+        leia("Digite o seu nome", nomeCliente);
+        leia("Qual o valor das suas compras no ano passado?", valorCompras);
+        
+        se(valorCompras < 500){
+            porcentagemCompras = (valorCompras * 10) / 100;
+            escreva("Parabens "+nomeCliente+", você ganhou um desconto de 10% no valor de suas compras do ano passado, esse valor é de: " + porcentagemCompras+ " reais!");
+        }
+        senão se(valorCompras > 500){
+            porcentagemCompras = (valorCompras*15)/100;
+            escreva("Parabens "+nomeCliente+", você ganhou um desconto de 15% no valor de suas compras do ano passado, esse valor é de: " + porcentagemCompras+ " reais!");
+        }
+        
+        
+    }
+    
+}

@@ -1,0 +1,13 @@
+início{
+    inteiro: i;
+    inteiro: contador;
+    contador = 0;
+    
+    para i de 300 até 600 passo 2{
+        contador = contador+1;
+    }
+    escreva("De 300 até 600 o contador contou "+contador+" números impares!");
+    
+    
+    
+}

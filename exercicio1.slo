@@ -1,0 +1,17 @@
+início {
+    inteiro: nota;
+    inteiro: media;
+    inteiro: soma;
+    inteiro: n;
+    
+    n = 1;
+    soma= 0;
+    enquanto(nota >= 0) {
+        leia ("Valor " +  n, nota);
+        se (nota >= 0) {
+            soma = soma + nota;
+        n = n + 1; }
+    }
+    media = soma / (n-1);
+    escreva("A média dos valores aritméticos inteiros são: " + media);
+}
